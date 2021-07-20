@@ -1,0 +1,10 @@
+# Git commands
+alias gs="git status"
+alias gcam="git commit -a -m"
+alias gacam="git add -A; git commit -m"
+alias gpo="git push origin"
+alias git-unchanged="git update-index --assume-unchanged"
+alias git-changed="git update-index --no-assume-unchanged"
+alias git-unchanged-all="git ls-files -m | xargs -I {} git update-index --assume-unchanged {}"
+alias git-unchanged-list="git ls-files -v|grep '^h'"
+alias git-changed-all="git ls-files -v | grep '^[a-z]' | cut -c3- | xargs -I {} git update-index --no-assume-unchanged {}"
